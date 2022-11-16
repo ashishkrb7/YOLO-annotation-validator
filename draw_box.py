@@ -91,7 +91,7 @@ if __name__ == '__main__':
     box_total = 0
     image_total = 0
     for image_name in image_names:
-        box_num = draw_box_on_image(image_name, classes, colors, label_folder, raw_images_folder, save_images_folder)#对图片画框
+        box_num = draw_box_on_image(image_name, classes, colors, label_folder, raw_images_folder, save_images_folder)
         box_total += box_num
         image_total += 1
         print('Box number:', box_total, 'Image number:',image_total)
