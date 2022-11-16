@@ -82,11 +82,11 @@ if __name__ == '__main__':
 
     make_name_list(raw_images_folder, name_list_path)
 
-    classes = image_names = open(classes_path).read().strip().split()
+    classes =  open(classes_path).read().strip().split()
     random.seed(42)
     colors = [[random.randint(0, 255) for _ in range(3)] for _ in range(len(classes))]
 
-    image_names = open(name_list_path).read().strip().split()
+    image_names = open(name_list_path).read().strip().split('\n')
 
     box_total = 0
     image_total = 0
